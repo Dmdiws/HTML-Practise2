@@ -13,7 +13,6 @@ main {
     color: white;
 }
 
-
 header {
     margin: 1% auto;
     text-align: right;
@@ -51,7 +50,7 @@ header h3 {
     overflow: hidden;
 }
 
-.section > div {
+.section > div, .outlined-info > * {
     display: inline-block;
     vertical-align: top;
 }
@@ -75,8 +74,12 @@ header h3 {
     border: 2px solid white;
 }
 
-.big-main-img { width: 59%; }
-.small-main-img { width: 39%; }
+.big-main-img { 
+    width: 59%; 
+}
+.small-main-img { 
+    width: 39%; 
+}
 
 .outlined-info {
     border: 2px solid rgb(26, 173, 209);
@@ -86,18 +89,15 @@ header h3 {
     margin-bottom: 1%;
 }
 
-.outlined-info > * {
-    display: inline-block;
-    vertical-align: top;
-}
-
 .outlined-info > h3 {
     width: 10%;
     font-size: 80%;
     margin: 0;
 }
 
-.outlined-info > div { width: 50%; }
+.outlined-info > div { 
+    width: 50%; 
+}
 
 .outlined-info > img {
     width: 35%;
@@ -120,11 +120,9 @@ header h3 {
 }
 
 .background-info .more-info,
-.last-info .more-info {
-    float: left;
+.last-info .more-info { 
+    float: left; 
 }
-
-.background-info + .background-info .more-info { float: right; }
 
 .more-info-wobackground {
     border: none;
@@ -141,7 +139,6 @@ header h3 {
 .background-info {
     float: left;
     width: 45%;
-    height: 37vh;
     padding: 2%;
     overflow: hidden;
     background-color: rgb(227, 126, 187);
@@ -149,10 +146,12 @@ header h3 {
     border-radius: 20px;
 }
 
-.background-info + .background-info { float: right; }
+.background-info + .background-info,
+.background-info + .background-info .more-info { 
+    float: right; 
+}
 
 .background-info > img {
-    display: inline-block;
     vertical-align: top;
     margin-bottom: 2%;
     width: 100%;
@@ -171,7 +170,9 @@ header h3 {
     overflow: hidden;
 }
 
-.small-topic > * { float: left; }
+.small-topic > * { 
+    float: left; 
+}
 
 .small-topic > img {
     width: 50%;
@@ -183,19 +184,25 @@ header h3 {
     margin-left: 2%;
 }
 
-.small-topic h3 { margin-bottom: 1%; }
+.small-topic h3 { 
+    margin-bottom: 1%; 
+}
 
 .small-topic p, input {
     margin-bottom: 0;
     padding: 0;
 }
 
-.small-topic p {
-    font-size: small;
+.small-topic p { 
+    font-size: small; 
 }
 
-.mirrored h3 { text-align: right; }
-.mirrored input { float: right; }
+.mirrored h3 { 
+    text-align: right; 
+}
+.mirrored input { 
+    float: right; 
+}
 
 footer {
     text-align: center;
